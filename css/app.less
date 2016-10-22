@@ -1,0 +1,150 @@
+@headerColor: #fff;
+@headerBg: #3e86ce;
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.header {
+	height: 60px;
+	line-height: 60px;
+	background: @headerBg;
+	color: @headerColor;
+	text-align: center;
+	.arrow-container {
+		position: relative;
+		.arrow {
+			position: absolute;
+			border: 16px solid transparent;
+		    border-right: 16px solid @headerColor;
+		    font-size: 0;
+		    left: 0;
+		    top: 13px;
+		}
+		.blue {
+			left: -11px;
+			border-right: 16px solid @headerBg;
+			top: -16px;
+		}
+	}
+	h1 {
+		text-indent: 40px;
+	}
+	.login {
+		float: right;
+		margin-right: 10px;
+	}
+}
+.list {
+	li {
+		padding: 10px;
+		border-bottom: 1px solid #ccc;
+		img {
+			width: 100px;
+			height: 80px;
+			float: left;
+		}
+		div {
+			margin-left: 110px;
+		}
+		h3 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 20px;
+			color: #666;
+			margin-top: 10px;
+			.list-comment {
+				float: right;
+   	 			margin-right: 10px;
+			}
+		}
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+}
+
+// 定义详情页样式
+.detail {
+	h1 {
+		font-size: 22px;
+		padding: 20px 0;
+		text-align: center;
+	}
+	.detail-intro {
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+	.detail-comment {
+		float: right;
+		margin-right: 15px;
+	}
+	.detail-time {
+		float: left;
+		margin-left: 15px;
+	}
+	img {
+		width: 100%;
+		margin-bottom: 25px;
+		height: 256px;
+	}
+	.detail-content {
+		line-height: 30px;
+	    padding: 0 15px;
+	}
+	.detail-comment-btn {
+		margin: 50px 20px;
+		display: block;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		color: @headerColor;
+		background: @headerBg;
+		border-radius: 5px;
+		text-align: center;
+	}
+}
+.comment {
+	.input-container {
+		padding-top: 30px;
+		margin: 0 15px;
+		overflow: hidden;
+	}
+	textarea {
+		width: 100%;
+		background: #efefef;
+		border: 1px solid #ccc;
+		height: 80px;
+		padding: 5px;
+	}
+	.comment-btn {
+		float: right;
+		margin: 30px 0 10px;
+		background: @headerBg;
+		color: @headerColor;
+		border-radius: 5px;
+		font-size: 16px;
+		padding: 10px 20px;
+	}
+	li {
+		margin: 0 15px;
+		padding: 15px 0;
+		border-bottom: 1px solid #ccc;
+		h3 {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		p {
+			line-height: 26px;
+			margin-bottom: 20px;
+		}
+		span {
+			font-size: 12px;
+			color: #666;
+		}
+	}
+}
